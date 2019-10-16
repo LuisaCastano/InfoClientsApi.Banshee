@@ -1,13 +1,15 @@
 ﻿using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using System;
 
-namespace InfoClients.Domain
+namespace Renting.Microservice.Domain
 {
-    public class InfoClientsContext : DbContext, IQueryableUnitOfWork
+    public class MicroserviceContext : DbContext, IQueryableUnitOfWork
     {
         private readonly string Schema;
-        public InfoClientsContext(DbContextOptions<InfoClientsContext> options, string schema) : base(options)
+        public MicroserviceContext(DbContextOptions<MicroserviceContext> options, string schema) : base(options)
         {
             Schema = schema;
 

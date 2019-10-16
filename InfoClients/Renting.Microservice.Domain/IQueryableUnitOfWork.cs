@@ -1,11 +1,12 @@
-﻿using InfoClients.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InfoClients.Domain
+
+namespace Renting.Microservice.Domain
 {
     public interface IQueryableUnitOfWork : IDisposable
     {

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoClients.Api", "InfoClients\InfoClients.Api.csproj", "{D7880CE8-2F98-4737-85EF-6FD039B568FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoClients.Api", "InfoClients\InfoClients.Api.csproj", "{D7880CE8-2F98-4737-85EF-6FD039B568FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoClients.Core", "InfoClients.Core\InfoClients.Core.csproj", "{7DAA1E14-8B18-474E-AB5A-1B1DE4D0F7DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoClients.Core", "InfoClients.Core\InfoClients.Core.csproj", "{7DAA1E14-8B18-474E-AB5A-1B1DE4D0F7DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoClients.Domain", "InfoClients.Domain\InfoClients.Domain.csproj", "{BF24FD05-4DB5-4E4E-97FE-B096D331486F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoClients.Domain", "InfoClients.Domain\InfoClients.Domain.csproj", "{BF24FD05-4DB5-4E4E-97FE-B096D331486F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
