@@ -1,8 +1,9 @@
-﻿using System;
+﻿using InfoClients.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace InfoClients.Domain.Entities
+namespace InfoClients.Core.Dtos
 {
     public class Client : EntityBase<Guid>
     {

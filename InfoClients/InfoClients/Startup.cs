@@ -22,6 +22,8 @@ using log4net;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using System.Reflection;
+using InfoClients.Core.Services;
+using InfoClients.Core.Interfaces;
 
 namespace InfoClients
 {
@@ -97,6 +99,8 @@ namespace InfoClients
             builder.RegisterType<CountryRepository>().As<ICountryRepository>();
             builder.RegisterType<StateRepository>().As<IStateRepository>();
             builder.RegisterType<SalesRepresentativeRepository>().As<ISalesRepresentativeRepository>();
+            builder.RegisterType<ClientService>().As<IClientService>();
+            builder.RegisterType<MasterService>().As<IMasterService>();
             ApplicationContainer = builder.Build();
 
         }

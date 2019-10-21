@@ -31,6 +31,12 @@ namespace InfoClients.Domain
                 return;
             }
             modelBuilder.HasDefaultSchema(Schema);
+            modelBuilder.Entity<Entities.City>().ToTable("City");
+            modelBuilder.Entity<Entities.Client>().ToTable("Client");
+            modelBuilder.Entity<Entities.ClientVisit>().ToTable("ClientVisit");
+            modelBuilder.Entity<Entities.Country>().ToTable("Country");
+            modelBuilder.Entity<Entities.State>().ToTable("State");
+            modelBuilder.Entity<Entities.SalesRepresentative>().ToTable("SalesRepresentative");
             base.OnModelCreating(modelBuilder);
         }
 
