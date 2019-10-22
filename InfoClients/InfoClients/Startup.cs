@@ -9,15 +9,11 @@ using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using log4net;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
@@ -101,6 +97,7 @@ namespace InfoClients
             builder.RegisterType<SalesRepresentativeRepository>().As<ISalesRepresentativeRepository>();
             builder.RegisterType<ClientService>().As<IClientService>();
             builder.RegisterType<MasterService>().As<IMasterService>();
+            builder.RegisterType<ReportService>().As<IReportService>();
             ApplicationContainer = builder.Build();
 
         }

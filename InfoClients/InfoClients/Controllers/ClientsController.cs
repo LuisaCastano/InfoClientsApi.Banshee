@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using InfoClients.Core.Dtos;
 using InfoClients.Core.Interfaces;
-using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InfoClients.Api.Controllers
@@ -45,7 +44,7 @@ namespace InfoClients.Api.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateClient([FromBody]Client client)
+        public async Task<IActionResult> CreateClient([FromForm]Client client)
         {
             if (!ModelState.IsValid)
             {

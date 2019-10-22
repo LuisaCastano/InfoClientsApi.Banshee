@@ -27,7 +27,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\components\CreateClient.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\InfoClients.Core\InfoClients.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\components\CreateClient.js" />
   </ItemGroup>
 
   <ItemGroup>

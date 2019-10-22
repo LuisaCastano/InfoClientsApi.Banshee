@@ -7,6 +7,8 @@ using System.Linq;
 
 namespace InfoClients.Api.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class MasterController : Controller
     {
         private readonly IMasterService masterService;
